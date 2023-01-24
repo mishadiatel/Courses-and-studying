@@ -1,0 +1,125 @@
+/* ////////////////RESET/////////////////////// */
+html, body {
+    line-height: 1;
+    height: 100%;
+
+}
+  
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+  
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+  
+ol, ul, li {
+    list-style: none;
+}
+  
+img {
+    height: auto;
+    vertical-align: top;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    margin-top: 40px;
+    text-align: center;
+}
+.open-popup {
+  
+    background-color: orange;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0);
+    transition: all 400ms ease;
+    
+}
+.popup.active{
+    transform: translateY(0%) scale(1);
+    background-color: rgba(0, 0, 0, 0.777);
+    
+}
+.popup__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.popup__body {
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 110px 15px;
+    position: relative;
+}
+
+.popup__body p{
+
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 40px;
+}
+.popup__body input{
+    display: block;
+    margin: 25px auto 0;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #89909f;
+}
+.popup__body input:focus{
+    outline: none;
+}
+.popup__body button{
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: orange;
+
+}
+.popup__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 21px;
+}
