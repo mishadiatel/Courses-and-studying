@@ -2,10 +2,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 20rem;
+  max-height: 15rem;
   overflow: auto;
-  max-height: 20rem;
-  overflow-y: scroll;
+}
+.cart-items::-webkit-scrollbar{
+  display: none;
 }
 
 .total {
