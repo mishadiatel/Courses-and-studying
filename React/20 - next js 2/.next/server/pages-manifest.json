@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/new-meetup": "pages/new-meetup.js",
-  "/api/new-meetup": "pages/api/new-meetup.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/[meetupId]": "pages/[meetupId].js"
 }
