@@ -10,12 +10,49 @@
   top: 30%;
   left: 25%;
   width: 50%;
+  transition: all 300ms ease-out;
 }
 
 .ModalOpen {
-  display: block;
+  /* opacity: 1;
+  transform: translateY(0); */
+  
+  animation: openModal 0.4s ease-out forwards;
 }
 
 .ModalClosed {
-  display: none;
+  /* opacity: 0;
+  transform: translateY(-100%); */
+  /* transform: scale(0); */
+  animation: closeModal 0.4s ease-out forwards;
+}
+
+@keyframes openModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(20%) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(60%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0);
+  }
 }
